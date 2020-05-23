@@ -32,3 +32,15 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Lint
       run: npm run lint
+
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
+        with:
+          start: npm build && npm start
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
