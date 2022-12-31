@@ -17,14 +17,14 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "node-sass": "4.9.3",
-    "nuxt": "^1.0.0"
+    "nuxt": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "cross-env": "^5.0.1",
     "cypress": "^4.6.0",
     "eslint": "^4.15.0",
-    "eslint-loader": "^2.0.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^4.0.0"
   }
 }
